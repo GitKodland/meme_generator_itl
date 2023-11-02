@@ -32,7 +32,7 @@
       <form method="POST" action="{{ url_for('index') }}">
         <ul class="form-list">
           <li class="form-list_item">
-            <label for="image-selector">Select a meme</label>
+            <label for="image-selector">Seleziona un meme</label>
             <select name="image-selector" id="image-selector">
               <option value="logo.svg" {% if selected_image == 'logo.svg' %}selected{% endif %}>Seleziona un meme</option>
               <option value="meme_1.jpg" {% if selected_image == 'meme_1.jpg' %}selected{% endif %}>Ragazza disastrosa</option>
@@ -44,11 +44,11 @@
           </li>
           <li class="form-list_item">
             <label for="textTop">Inserire qui il testo superiore</label>
-            <input class="input_text" type="text" placeholder="Top text" name="textTop">
+            <input class="input_text" type="text" placeholder="Testo superiore" name="textTop">
           </li>
           <li class="form-list_item">
             <label for="textBottom">Inserire qui il testo inferiore</label>
-            <input class="input_text" type="text" placeholder="Bottom text" name="textBottom">
+            <input class="input_text" type="text" placeholder="Testo inferiore" name="textBottom">
           </li>
           <li class="form-list_item">
             <label for="color-selector">Impostare il colore del testo</label>
@@ -62,11 +62,11 @@
           </li>
           <li class="form-list_item">
             <label for="textTop_y">Inserire il posizionamento del testo superiore sull'asse Y</label>
-            <input class="input_text" id="textTop_y" type="text" placeholder="Top text" name="textTop_y">
+            <input class="input_text" id="textTop_y" type="text" placeholder="Testo superiore" name="textTop_y">
           </li>
           <li class="form-list_item">
             <label for="textBottom_y">Inserire il posizionamento del testo inferiore sull'asse Y</label>
-            <input class="input_text" id="textBottom_y" type="text" placeholder="Bottom text" name="textBottom_y">
+            <input class="input_text" id="textBottom_y" type="text" placeholder="Testo inferiore" name="textBottom_y">
           </li>
           <button type="submit">Crea il meme</button>
         </ul>
