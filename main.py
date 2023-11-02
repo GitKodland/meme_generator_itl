@@ -8,33 +8,33 @@ app = Flask(__name__)
 @app.route('/', methods=['GET','POST'])
 def index():
     if request.method == 'POST':
-        # getting the selected image
+        # ottenere l'immagine selezionata
         selected_image = request.form.get('image-selector')
 
-        # Assignment #2.Receiving the text
+        # Consegna #2. Ricevere il testo
         
 
-        # Assignment #3. Receiving the text's positioning
+        # Consegna #3. Ricezione del posizionamento del testo
        
 
-        # Assignment #3. Receiving the text's colour
+        # Consegna #3. Ricezione del colore del testo
         
 
         return render_template('index.html', 
-                               # Displaying the selected  image
+                               # Visualizzazione dell'immagine selezionata
                                selected_image=selected_image, 
 
-                               # Assignment #2. Displaying the text
+                               # Consegna #2. Visualizzazione del testo
                                
 
-                               # Assignment #3. Displaying the colour 
+                               # Consegna #3. Visualizzazione del colore 
                                
                                
-                               # Assignment #3. Displaying the text's positioning
+                               # Consegna #3. Visualizzazione del posizionamento del testo
 
                                )
     else:
-        # Displaying the first image by default
+        # Visualizzazione predefinita della prima immagine
         return render_template('index.html', selected_image='logo.svg')
 
 
